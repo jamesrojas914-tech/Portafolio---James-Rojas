@@ -1,17 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
+import Navbar from './components/Navbar/Navbar';
+import Banner from './components/Banner/Banner';
+import Perfil from './components/Perfil/Perfil';
+import Habilidades from './components/Habilidades/Habilidades';
+import Proyectos from './components/Proyectos/Proyectos';
+import Servicios from './components/Servicios/Servicios';
+import Certificados from './components/Certificados/Certificados';
+import Contacto from './components/Contacto/Contacto';
+import Footer from './components/Footer/Footer';
+import './App.css';
+import './index.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      
+      <Navbar />
+      <Banner />
+      <Perfil />
+      <Habilidades />
+      <Proyectos />
+      <Servicios />
+      <Certificados />
+      <Contacto />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
